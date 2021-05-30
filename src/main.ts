@@ -7,7 +7,7 @@ async function bootstrap() {
     transport: Transport.KAFKA,
     options: {
       client: {
-        brokers: ['kafka-2.kafka.default.svc.cluster.local:9092'],
+        brokers: ['kafka-0.kafka.default.svc.cluster.local:9092','kafka-1.kafka.default.svc.cluster.local:9092', 'kafka-2.kafka.default.svc.cluster.local:9092']
       },
       consumer: {
           groupId: 'nest-kafka-consumer',
